@@ -97,7 +97,8 @@ class Ui_Dialog(object):
         self.formLayout.setWidget(7, QFormLayout.LabelRole, self.pb_add)
 
         QWidget.setTabOrder(self.le_number_1, self.le_number_2)
-        QWidget.setTabOrder(self.le_number_2, self.pb_add)
+        QWidget.setTabOrder(self.le_number_2, self.l2_result)
+        QWidget.setTabOrder(self.l2_result, self.pb_add)
         QWidget.setTabOrder(self.pb_add, self.pb_subtract)
         QWidget.setTabOrder(self.pb_subtract, self.pb_multiply)
         QWidget.setTabOrder(self.pb_multiply, self.pb_divide)
