@@ -16,16 +16,16 @@ class Calculator(qtw.QWidget, Ui_Dialog ):
         self.pb_divide.clicked.connect(self.divide)
     @qtc.Slot()
     def add(self):
-        self.lb_result.setText(f"Result is {float(self.le_first_number.text()) + float(self.le_second_number.text())}")
+        self.l2_result.setText(f"{float(self.le_number_1.text()) + float(self.le_number_2.text())}")
     @qtc.Slot()
     def subtract(self):
-        self.lb_result.setText(f"Result is {float(self.le_first_number.text()) - float(self.le_second_number.text())}")
+        self.l2_result.setText(f"{float(self.le_number_1.text()) - float(self.le_number_2.text())}")
     @qtc.Slot()
     def multiply(self):
-        self.lb_result.setText(f"Result is {float(self.le_first_number.text()) * float(self.le_second_number.text())}")
+        self.l2_result.setText(f"{float(self.le_number_1.text()) * float(self.le_number_2.text())}")
     @qtc.Slot()
     def divide(self):
-        self.lb_result.setText(f"Result is {float(self.le_first_number.text()) / float(self.le_second_number.text())}")
+        self.l2_result.setText(f"{float(self.le_number_1.text()) / float(self.le_number_2.text())}")
 
 if __name__ == "__main__":
     app = qtw.QApplication(sys.argv)
